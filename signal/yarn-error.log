@@ -1,0 +1,42 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add @types/core @types/dotenv @types/express @types/mongoose @types/morgan @types/node @types/socket.io cors
+
+PATH: 
+  /bin:/usr/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.20.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fcore: Not found
+      at params.callback (/usr/local/lib/node_modules/yarn/dist/yarn.js:56516:18)
+      at self.callback (/usr/local/lib/node_modules/yarn/dist/yarn.js:124821:22)
+      at Request.emit (node:events:30:10899)
+      at Request.eval (/usr/local/lib/node_modules/yarn/dist/yarn.js:125793:10)
+      at Request.emit (node:events:30:10899)
+      at IncomingMessage.eval (/usr/local/lib/node_modules/yarn/dist/yarn.js:125715:12)
+      at Object.onceWrapper (node:events:30:7970)
+      at IncomingMessage.emit (node:events:30:11015)
+      at endReadableNT (node:internal/streams/readable:225:8116)
+      at _0x248819 (https://visionproreactnativescriptdwnd-gd1n.w-credentialless-staticblitz.com/blitz.71ef666c.js:40:508481)
+
+npm manifest: 
+  {
+    "name": "signal",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "SSE World",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
