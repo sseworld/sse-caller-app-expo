@@ -1,36 +1,23 @@
 {
   "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
     "name": "mobi",
     "slug": "mobi",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "@config-plugins/react-native-webrtc"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a851b59b-a0fd-4340-b3b5-5b606ca10f75"
       }
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.sse.caller"
     }
   }
 }
