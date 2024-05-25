@@ -4,8 +4,8 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "mobi",
-    "slug": "mobi",
+    "name": "SSE Video Caller",
+    "slug": "sse-video-caller-yowocpgkb5lovgwtjo59b",
     "plugins": [
       "@react-native-google-signin/google-signin",
       "@config-plugins/react-native-webrtc"

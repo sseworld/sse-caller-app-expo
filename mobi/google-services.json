@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "686675871716",
+    "project_id": "sse-caller",
+    "storage_bucket": "sse-caller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686675871716:android:025e4398dd67f1fa66a9f1",
+        "android_client_info": {
+          "package_name": "com.sse.caller"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWSWuTJCi_pcJDDc1yNpKB3Kswnd-YDrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

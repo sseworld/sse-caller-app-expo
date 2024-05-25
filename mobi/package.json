@@ -10,6 +10,10 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
+    "easl": "eas login",
+    "easbc": "eas build:configure",
+    "easbl": "eas build:list",
+    "easb": "eas build",
     "easi": "eas init --id a851b59b-a0fd-4340-b3b5-5b606ca10f75"
   },
   "jest": {
