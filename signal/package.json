@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "SSE World",
   "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/index.ts"
+  },
   "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/dotenv": "^8.2.0",
