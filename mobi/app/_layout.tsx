@@ -1,37 +1,36 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import React from 'react'
+import { Stack } from 'expo-router/stack'
+import SocketProvider from '../src/providers/socket_provider'
+import ProfileProvider from '../src/providers/profile_provider'
+import CallProvider from '../src/providers/call_provider'
 
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
-
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-    </ThemeProvider>
-  );
+const AppLayout = () => {
+    return (
+        <ProfileProvider>
+            <SocketProvider>
+                <CallProvider>
+                    <Stack>
+                        
+                        <Stack.Screen name="index" options={{ headerShown: false }} />
+                        <Stack.Screen
+                            name="home"
+                            options={{
+                                headerTitle: 'My Friends',
+                                headerTitleAlign: 'center',
+                            }}
+                        />
+                        <Stack.Screen
+                            name="call"
+                            options={{
+                                headerShown: false,
+                            }}
+                        />
+                        
+                    </Stack>
+                </CallProvider>
+            </SocketProvider>
+        </ProfileProvider>
+    )
 }
+
+export default AppLayout
